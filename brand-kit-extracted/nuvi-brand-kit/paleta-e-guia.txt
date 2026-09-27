@@ -1,0 +1,22 @@
+NUVI — Guia rápido de identidade visual
+=========================================
+
+CORES
+- Fundo/base:      #12151A (grafite escuro)
+- Texto/claro:      #F5F6F7
+- Destaque:         #17B891 (verde-petróleo) — usar com moderação, só em pontos de ênfase
+
+TIPOGRAFIA
+- Títulos/wordmark: sans geométrico bold (peso 900)
+- Corpo de texto:   Inter
+
+CONCEITO
+- Monograma "N" construído em vetor (não é fonte) — nítido em qualquer tamanho, até favicon 16px
+- O "i" do logotipo em verde-petróleo funciona como um cursor de terminal — reforça a identidade de estúdio de software
+
+ARQUIVOS INCLUÍDOS
+/icones          → favicon (16/32/48/.ico), apple-touch-icon (180), ícone PWA (192/512), maskable (512)
+/logo            → ícone da marca isolado + logotipo completo (ícone + "nuvi")
+/social-media    → foto de perfil (Instagram/LinkedIn), banner (LinkedIn/Twitter/Facebook, 1584x396),
+                    post de apresentação (Instagram, 1080x1080), 3 capas de destaque
+                    (Projetos, Serviços, Contato)

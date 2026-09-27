@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
+  --color-nuvi-bg: var(--nuvi-bg);
+  --color-nuvi-bg-elevated: var(--nuvi-bg-elevated);
+  --color-nuvi-fg: var(--nuvi-fg);
+  --color-nuvi-fg-muted: var(--nuvi-fg-muted);
+  --color-nuvi-accent: var(--nuvi-accent);
+  --color-nuvi-accent-foreground: var(--nuvi-accent-foreground);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* Identidade Nuvi */
+  --nuvi-bg: #12151a;
+  --nuvi-bg-elevated: #171b21;
+  --nuvi-fg: #f5f6f7;
+  --nuvi-fg-muted: #9aa0a8;
+  --nuvi-accent: #17b891;
+  --nuvi-accent-foreground: #0a0c0f;
+
+  --background: var(--nuvi-bg);
+  --foreground: var(--nuvi-fg);
+  --card: var(--nuvi-bg-elevated);
+  --card-foreground: var(--nuvi-fg);
+  --popover: var(--nuvi-bg-elevated);
+  --popover-foreground: var(--nuvi-fg);
+  --primary: var(--nuvi-accent);
+  --primary-foreground: var(--nuvi-accent-foreground);
+  --secondary: #1d222a;
+  --secondary-foreground: var(--nuvi-fg);
+  --muted: #1d222a;
+  --muted-foreground: var(--nuvi-fg-muted);
+  --accent: var(--nuvi-accent);
+  --accent-foreground: var(--nuvi-accent-foreground);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: rgba(245, 246, 247, 0.1);
+  --input: rgba(245, 246, 247, 0.12);
+  --ring: var(--nuvi-accent);
+  --radius: 0.75rem;
+  --sidebar: var(--nuvi-bg-elevated);
+  --sidebar-foreground: var(--nuvi-fg);
+  --sidebar-primary: var(--nuvi-accent);
+  --sidebar-primary-foreground: var(--nuvi-accent-foreground);
+  --sidebar-accent: #1d222a;
+  --sidebar-accent-foreground: var(--nuvi-fg);
+  --sidebar-border: rgba(245, 246, 247, 0.1);
+  --sidebar-ring: var(--nuvi-accent);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans scroll-smooth;
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image:
+      repeating-linear-gradient(
+        135deg,
+        rgba(245, 246, 247, 0.025) 0px,
+        rgba(245, 246, 247, 0.025) 1px,
+        transparent 1px,
+        transparent 14px
+      );
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
