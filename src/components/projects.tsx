@@ -7,14 +7,14 @@ const PROJECTS: Project[] = [
     tag: "SaaS",
     description:
       "Plataforma de gestão para negócios que precisam de controle e organização no dia a dia — do cadastro ao relatório, em produção.",
-    href: "#",
+    href: "https://kirvo-painel.vercel.app/",
   },
   {
     name: "Alô Delivery",
     tag: "Marketplace",
     description:
       "Sistema de pedidos e delivery que conecta estabelecimentos e clientes, com painel próprio e operação em tempo real.",
-    href: "#",
+    href: "https://alo-delivery-website.vercel.app/",
   },
 ];
 

@@ -3,9 +3,9 @@ import { GithubIcon, InstagramIcon, LinkedinIcon } from "@/components/social-ico
 import { Logo } from "@/components/logo";
 
 const SOCIAL_LINKS = [
-  { icon: InstagramIcon, href: "#", label: "Instagram" },
+  { icon: InstagramIcon, href: "https://www.instagram.com/tiago.campos1_", label: "Instagram" },
   { icon: LinkedinIcon, href: "#", label: "LinkedIn" },
-  { icon: GithubIcon, href: "#", label: "GitHub" },
+  { icon: GithubIcon, href: "https://github.com/tiagoocampos", label: "GitHub" },
 ];
 
 export function Footer() {

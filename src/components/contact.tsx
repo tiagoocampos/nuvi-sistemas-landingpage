@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/reveal";
 
 const EMAIL = "tiago.campos.da.silva1@gmail.com";
-const WHATSAPP_NUMBER = "5500000000000"; // TODO: substituir pelo número real
+const WHATSAPP_NUMBER = "5554999067417";
 
 export function Contact() {
   return (
